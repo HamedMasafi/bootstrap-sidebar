@@ -2,6 +2,12 @@
 @import "desktop-mode";
 @import "mobile-mode";
 
+.test{
+@media @only-sm {
+    color: beige;
+}
+}
+
 .navbar-logo {
     text-align: center;
     float: left;
@@ -64,16 +70,16 @@ body.has-sidebar{
 
 
 @media screen {
+    @media @only-xs {
         body.drawer-xs.has-sidebar{
             .m-body-drawer();
         }
         body.drawer-xs.sidebar-open{
             .m-body-drawer-open();
         }
-    @media @{only-xs} {
     }
 
-    @media (min-width: @sm) {
+    @media @only-sm {
         body.drawer-sm.has-sidebar{
             .m-body-drawer();
         }
@@ -82,7 +88,7 @@ body.has-sidebar{
         }
     }
 
-    @media (min-width: @md) {
+    @media @only-md {
         body.drawer-md.has-sidebar{
             .m-body-drawer();
         }
@@ -91,7 +97,7 @@ body.has-sidebar{
         }
     }
 
-    @media (min-width: @lg) {
+    @media @only-lg {
         body.drawer-lg.has-sidebar{
             .m-body-drawer();
         }

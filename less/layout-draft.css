@@ -1,8 +1,13 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  .test {
+    color: beige;
+  }
+}
 .navbar-logo {
   text-align: center;
   float: left;
   height: 0;
-  margin-top: 24px;
+  margin-top: 9px;
 }
 body {
   direction: rtl;
@@ -64,7 +69,7 @@ body.has-sidebar > .container-a > footer {
   -webkit-transition: transform .3s;
   transition: transform .3s;
 }
-@media screen {
+@media screen and (max-width: 768px) {
   body.drawer-xs.has-sidebar > .dim {
     display: block;
     position: fixed;
@@ -114,7 +119,7 @@ body.has-sidebar > .container-a > footer {
     height: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   body.drawer-sm.has-sidebar > .dim {
     display: block;
     position: fixed;
@@ -164,7 +169,7 @@ body.has-sidebar > .container-a > footer {
     height: auto;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   body.drawer-md.has-sidebar > .dim {
     display: block;
     position: fixed;
