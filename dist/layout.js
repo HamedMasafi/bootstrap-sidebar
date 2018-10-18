@@ -26,4 +26,7 @@ $(function () {
     $("body>.dim").click(function(){
         $("body").removeClass("sidebar-open")
     })
+
+    if ($("body div.dim").length === 0) 
+        $("body").append($('<div class="dim"></div>'))
 })

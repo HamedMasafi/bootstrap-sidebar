@@ -23,6 +23,7 @@ body{
     > @{selector_header1}, > @{selector_header2} {
         .toggle-sidebar{
             display: none;
+            overflow: auto;
         }
     }
     
@@ -59,7 +60,7 @@ body.has-sidebar{
         .m-desktop-mode-main-section();
     }
     > @{selector_section1}, > @{selector_section2}{
-            .m-desktop-mode-main-section();
+        .m-desktop-mode-main-section();
     }
     > @{selector_footer1}, > @{selector_footer2} {
         .m-desktop-mode-footer();
@@ -75,6 +76,9 @@ body.has-sidebar{
         body.drawer-xs.sidebar-open{
             .m-body-drawer-open();
         }
+        body.no-drawer-xs{
+            .m-body-no-drawer();
+        }
     }
 
     @media @only-sm {
@@ -83,6 +87,9 @@ body.has-sidebar{
         }
         body.drawer-sm.sidebar-open{
             .m-body-drawer-open();
+        }
+        body.no-drawer-sm{
+            .m-body-no-drawer();
         }
     }
 
@@ -93,6 +100,9 @@ body.has-sidebar{
         body.drawer-md.sidebar-open{
             .m-body-drawer-open();
         }
+        body.no-drawer-md{
+            .m-body-no-drawer();
+        }
     }
 
     @media @only-lg {
@@ -101,6 +111,9 @@ body.has-sidebar{
         }
         body.drawer-lg.sidebar-open{
             .m-body-drawer-open();
+        }
+        body.no-drawer-lg{
+            .m-body-no-drawer();
         }
     }
 }

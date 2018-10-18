@@ -4,8 +4,10 @@ rm dist/layout.min.css
 lessc less/layout-draft.less > dist/layout.css
 yui-compressor dist/layout.css > dist/layout.min.css
 
-if [ ! -f dist/layout.min.css ]; then
-	kdialog --msgbox Done!
+if [ -f dist/layout.min.css ]; then
+	echo "Done!"
+	#kdialog --msgbox Done!
 else
-	kdialog --msgbox Fail!
+	echo "Fail!"
+	#kdialog --msgbox Fail!
 fi
