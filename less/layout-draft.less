@@ -1,3 +1,9 @@
+/*
+bootstrap sidebar
+Hamed Masafi
+hamed.masafi@gmail.com
+*/
+
 @import "defines";
 @import "desktop-mode";
 @import "mobile-mode";
@@ -10,8 +16,6 @@
 }
 
 body{
-    direction: rtl;
-
     > .dim{
         display: none;
     }
@@ -98,5 +102,11 @@ body.has-sidebar{
         body.drawer-lg.sidebar-open{
             .m-body-drawer-open();
         }
+    }
+}
+
+@media print {
+    .drawer, .dim {
+	   display: none;
     }
 }

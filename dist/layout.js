@@ -21,6 +21,7 @@ $(function () {
     $(window).resize();
     $(".sidebar-toggle").click(function () {
         $("body").toggleClass("sidebar-open")
+        return false;
     })
     $("body>.dim").click(function(){
         $("body").removeClass("sidebar-open")

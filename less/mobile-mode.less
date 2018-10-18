@@ -16,14 +16,14 @@
     position: fixed;
     width: 220px;
     top: 0;
-    right: -100%;
     bottom: 0;
-    z-index: 116;
+    z-index: 1040;
     height: 100%;
     -webkit-backface-visibility: hidden;
     -webkit-transition: right .3s ease;
     transition: right .3s ease;
     padding-top: 30px;
+    right: -100%;
 }
 
 .m-mobile-footer(){
@@ -56,11 +56,13 @@
     }
 }
 .m-body-drawer-open(){
+    overflow: hidden;
+
     > @{selector_aside1}, > @{selector_aside2} {
         right: 0;
     }
     > .dim{
-        z-index: 50;
+        z-index: 1035;
         opacity: .6;
         height: auto;
     }   

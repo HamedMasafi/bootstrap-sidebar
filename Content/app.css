@@ -1,4 +1,8 @@
- aside.drawer{
+body{
+    direction: rtl;
+}
+
+aside.drawer{
     border-left: 1px solid gray;
     background-color: white;
 }
@@ -14,4 +18,8 @@ body > footer i, body > .container-a > footer i{
 
 .large{
 	width: 400px;
+}
+
+p {
+    text-align: justify;
 }
